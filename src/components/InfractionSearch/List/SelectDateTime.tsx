@@ -16,8 +16,8 @@ export const SelectDateTime: React.FC = () => {
   });
   return (
     <>
-      <form className=" mx-5 my-2 " onSubmit={handleSubmit(onFinish)}>
-        <div className="w-full ">
+      <form className="" onSubmit={handleSubmit(onFinish)}>
+        <div className="">
         <div>ຄົນຫາຕາມວັນທີ</div>
           <Controller
             control={control}
@@ -31,7 +31,7 @@ export const SelectDateTime: React.FC = () => {
                 renderInput={(props) => (
                   <input
                     {...props}
-                    className="px-4 w-full py-2 h-10 border focus:ring-gray-500 focus:border-base sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600 p-5"
+                    className=""
                   />
                 )}
                 initialValue={Moment(field.value)}

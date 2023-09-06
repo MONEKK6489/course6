@@ -22,10 +22,10 @@ export const Pagination: React.FC<PaginationProps> = ({
   getCanNextPage,
 }) => {
   return (
-    <div className="py-1 px-4">
-      <nav className="flex items-center space-x-2">
+    <div className="">
+      <nav className="">
         <select
-          className="py-3 px-4 text-white font-medium rounded hover:bg-slate-600 items-center bg-slate-900 ring-1 ring-inset ring-gray-300"
+          className=""
           value={getState().pagination.pageSize}
           onChange={(e) => {
             setPageSize(Number(e.target.value));
@@ -42,9 +42,9 @@ export const Pagination: React.FC<PaginationProps> = ({
             setPageIndex(0);
           }}
           disabled={!getCanPreviousPage()}
-          className="py-2 px-4 text-white font-medium rounded hover:bg-slate-600 items-center bg-slate-900 ring-1  ring-gray-300"
+          className=""
         >
-          <MdOutlineKeyboardDoubleArrowLeft className="h-6 w-6" />
+          <MdOutlineKeyboardDoubleArrowLeft className="" />
         </button>
         {Array.from({ length: getPageCount() }, (_, index) => (
           <button
@@ -52,10 +52,10 @@ export const Pagination: React.FC<PaginationProps> = ({
             onClick={() => {
               setPageIndex(index);
             }}
-            className={`w-10 h-10 text-gray-400 hover:text-blue-600 p-4 inline-flex items-center text-sm font-medium rounded-lg
+            className={`
                     ${
                       getState().pagination.pageIndex === index
-                        ? "bg-blue-500 text-white"
+                        ? ""
                         : ""
                     }`}
           >
@@ -67,9 +67,9 @@ export const Pagination: React.FC<PaginationProps> = ({
             setPageIndex(getPageCount() - 1);
           }}
           disabled={!getCanNextPage()}
-          className="py-2 px-4 text-white font-medium rounded hover:bg-slate-600 items-center bg-slate-900 ring-1  ring-gray-300"
+          className=""
         >
-          <MdOutlineKeyboardDoubleArrowRight className="h-6 w-6" />
+          <MdOutlineKeyboardDoubleArrowRight className="" />
         </button>
       </nav>
     </div>

@@ -8,7 +8,7 @@ export const CammeraPage: React.FC = () => {
   };
   return (
     <>
-      <div className="w-3/4 mx-auto space-y-4">
+      <div className="">
         <CammeraConfig handleShowCamera={handleShowCamera} />
         <CameraView camera={camera}/>
       </div>

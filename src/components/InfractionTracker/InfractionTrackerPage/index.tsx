@@ -5,7 +5,7 @@ export const InfractionTrackerPage: React.FC<any> = ({}) => {
   return (
     <>
       <section id="InfractionTracker">
-        <div className="w-3/4 mx-auto">
+        <div className="">
           <InfractionTrackerList />
         </div>
       </section>

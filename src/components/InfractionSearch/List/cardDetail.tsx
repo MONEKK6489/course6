@@ -17,9 +17,9 @@ export const CardDetail: React.FC<any> = ({ tracker_data }) => {
 
   return (
     <>
-      <div className="ml-5 rounded-lg h-96 w-96 flex flex-col border bg-slate-700 text-white">
-        <div className="text-xl  text-center pt-5"> ລາຍລະອຽດ</div>
-        <div className=" rounded-lg  text-xl pl-5">
+      <div className="">
+        <div className=""> ລາຍລະອຽດ</div>
+        <div className="">
           <div className=" p-2 ">
             ປ້າຍລົດ:
             {tracker_data
