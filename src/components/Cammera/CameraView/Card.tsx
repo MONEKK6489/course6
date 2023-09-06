@@ -28,27 +28,16 @@ export const CameraView: React.FC<ICameraView> = ({ camera }) => {
   return (
     <>
       <section id="home">
-        <div className="grid grid-cols-1 sm:grid-cols-2 shadow-md  px-8 pt-6 pb-8 mb-4 my-2 bg-slate-800 rounded-xl">
-          <div className="justify-center mx-auto rounded-lg p-2">
+        <div className="">
+          <div className="">
             <SelectCamera />
             <Webcam />
           </div>
-          <div className="justify-center mx-auto rounded-lg p-2">
+          <div className="">
             <SelectCamera />
             <Webcam />
           </div>
-          {/* <div className="justify-center  mx-auto ">
-            <SelectCamera />
-            <Webcam />
-          </div>
-          <div className="justify-center  mx-auto ">
-            <SelectCamera />
-            <Webcam />
-          </div>
-          <div>
-            <h1> Camera Stream</h1>
-            <video ref={videoRef} autoPlay playsInline />
-          </div> */}
+
         </div>
       </section>
     </>

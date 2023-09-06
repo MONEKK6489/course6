@@ -53,24 +53,24 @@ export const InfractionSearchList: React.FC = ({}) => {
   }));
   return (
     <>
-      <div className="pb-5 flex  justify-center  w-3/4  gap-x-1 mx-auto bg-slate-800">
-        <div className=" space-y-2">
+      <div className="">
+        <div className="">
           <Filter onFilter={handleFilter} />
           <CardDetail tracker_data={tracker_data} />
         </div>
-        <div className=" rounded-lg p-5 w-full ">
-          <div className="max-w-full  px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto h-auto rounded-lg flex flex-col">
-            <div className="text-center text-2xl text-white">ຄົ້ນຫາລົດທີ່ລ່ວງລະເມີດ</div>
-            <div className="overflow-x-auto h-full z-10 px-2 border border-gray-200 rounded-xl shadow-sm overflow-hidden bg-slate-900 border-gray-700">
-              <table className=" w-full table-auto my-5">
-                <thead className="bg-slate-800 border-b table-auto text-white">
+        <div className="">
+          <div className="">
+            <div className="">ຄົ້ນຫາລົດທີ່ລ່ວງລະເມີດ</div>
+            <div className="">
+              <table className="">
+                <thead className="">
                   {getHeaderGroups().map((headerGroup) => (
                     <tr key={headerGroup.id}>
                       {headerGroup.headers.map((header) => (
                         <th
                           key={header.id}
                           scope="col"
-                          className="text-sm font-medium px-6 py-4 text-left"
+                          className=""
                         >
                           {!header.isPlaceholder &&
                             flexRender(
@@ -86,12 +86,12 @@ export const InfractionSearchList: React.FC = ({}) => {
                   {getRowModel().rows.map((row) => (
                     <tr
                       key={row.id}
-                      className="bg-slate-700 border-b transition duration-300 ease-in-out hover:bg-slate-800 text-white"
+                      className=""
                     >
                       {row.getVisibleCells().map((cell) => (
                         <td
                           key={cell.id}
-                          className="text-sm font-light px-6 py-4 whitespace-nowrap"
+                          className=""
                         >
                           {flexRender(
                             cell.column.columnDef.cell,
@@ -103,7 +103,7 @@ export const InfractionSearchList: React.FC = ({}) => {
                   ))}
                 </tbody>
               </table>
-              <div className="px-6 py-4 grid gap-3 md:flex md:justify-between md:items-center border-t border-gray-200 dark:border-gray-700">
+              <div className="">
                 <Pagination
                   getState={getState}
                   setPageSize={setPageSize}

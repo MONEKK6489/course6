@@ -18,8 +18,8 @@ export const Filter: React.FC<IFilter> = ({ onFilter }) => {
 
   return (
     <>
-      <form className=" w-72  z-10" onSubmit={handleSubmit(handleFormSubmit)}>
-        <div className=" w-full relative flex rounded-md shadow-sm border">
+      <form className="" onSubmit={handleSubmit(handleFormSubmit)}>
+        <div className="">
           <Controller
             control={control}
             name="created_on"
@@ -32,7 +32,7 @@ export const Filter: React.FC<IFilter> = ({ onFilter }) => {
                 renderInput={(props) => (
                   <input
                     {...props}
-                    className="py-3 px-4 pl-11 block w-full border-gray-200 shadow-sm rounded-l-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 bg-slate-900 text-gray-400"
+                    className=""
                   />
                 )}
                 initialValue={moment(field.value)}
@@ -43,7 +43,7 @@ export const Filter: React.FC<IFilter> = ({ onFilter }) => {
           />
           <button
             type="submit"
-            className="py-3  px-5 inline-flex flex-shrink-0 justify-center items-center rounded-r-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-sm"
+            className=""
           >
             ຄົ້ນຫາ
           </button>

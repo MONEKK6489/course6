@@ -36,7 +36,7 @@ export const Header = ({
             <img
               src={image}
               alt="bill"
-              className="h-[100px] w-[100px] m-auto object-cover"
+              className=""
             />
           </div>
         );
@@ -53,7 +53,7 @@ export const Header = ({
             <img
               src={image}
               alt="bill"
-              className="h-[100px] w-[100px] m-auto object-cover"
+              className=""
             />
           </div>
         );

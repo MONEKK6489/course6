@@ -10,7 +10,7 @@ interface LandingPageProps {}
 
 const Landing: React.FC<LandingPageProps> = ({}) => {
   return (
-    <div className="bg-slate-900">
+    <div className="">
       <Navbar>
         <CammeraPage />
         <InfractionTrackerPage />
