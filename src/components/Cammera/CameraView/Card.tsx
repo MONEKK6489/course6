@@ -23,12 +23,7 @@ export const CameraView: React.FC<ICameraView> = ({ camera }) => {
       }
     }
     getCameraStream();
-  }, []);
-  
-  // const classStyle = twMerge(
-  //   " grid gap-4 h-fit p-5  bg-gray-200 rounded-lg   ",
-  //   `grid-cols-${camera?.column?camera?.column:2} grid-rows-${camera?.row?camera?.row:''}`
-  // );
+  }, []); 
 
   return (
     <>
